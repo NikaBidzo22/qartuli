@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./bgimg.jpeg);
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    box-shadow: 0px 5px 20px rgb(199, 199, 199);
+    transition: 0.4s;
+}
+
+.btn {
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    box-shadow: 0px 5px 20px rgb(48, 48, 48);
+    transition: 1s;
+    border-radius: 0px;
+    border: none;
+    top: -102vh;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.reason {
+    position: relative;
+    top: 210px;
+    font-family: 'Noto Sans Georgian', sans-serif;
+    animation: infinite 2s;
+    animation-name: rain;
+    cursor: pointer;
+}
+
+@keyframes rain {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.main {
+    width: 100%;
+    height: 92%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    top: 76px;
+}
+
+.dk {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    color: white;
+    text-align: center;
+    font-family: 'Noto Sans Georgian', sans-serif;
+
+}
+
+.text {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: 30px;
+    width: 1200px;
+    margin-top: 200px;
+}
